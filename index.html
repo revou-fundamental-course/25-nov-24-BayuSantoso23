@@ -23,17 +23,26 @@
     
             <!-- Main Form -->
             <form action="">
+                <div class="form-item">
+                    <label for="jenisKelamin">Jenis Kelamin</label>
+                    <select name="jenisKelamin" id="jenisKelamin" required="required">
+                        <option value="" disabled selected>Pilih jenis kelamin</option>
+                        <option value="Pria">Pria</option>
+                        <option value="Wanita">Wanita</option>
+                    </select>
+                </div>
+                
                 <div class="form-item ">
                     <label for="beratBadan">Berat Badan(kg)</label>
-                    <input type="number" name="beratBadan" id="beratBadan">
+                    <input type="number" name="beratBadan" id="beratBadan" required="required">
                 </div>
                 <div class="form-item">
                     <label for="usia">Usia(tahun)</label>
-                    <input type="number" name="usia" id="usia">
+                    <input type="number" name="usia" id="usia" required="required">
                 </div>
                 <div class="form-item">
                     <label for="tinggiBadan">Tinggi Badan(cm)</label>
-                    <input type="number" name="tinggiBadan" id="tinggiBadan">
+                    <input type="number" name="tinggiBadan" id="tinggiBadan" required="required">
                 </div>
     
                 <!-- Submit Button -->
@@ -71,24 +80,25 @@
                 </header>
 
                 <div class="hasil">
-                    <p>Berat Badan Lebih</p>
+                    <p>Hasil BMI</p>
                     <div id="result-calculation">0</div>
-                    <p id="info-result">Anda memiliki berat badan #</p>
+                    <p id="info-result"></p>
                 </div>
 
             </div>
 
             <!-- Third Article -->
             <article>
-                <p>Hasil BMI diantara #</p>
+                <p id="hasil-bmi"></p>
+                <p id="kategori-bmi"></p>
+                <p id="anjuran-bmi"></p>
 
-                <p>Anda berada dalam kategori #</p>
-
-                <p>Jika BMI Anda berada di dalam kategori ini maka Anda dianjurkan #</p>
 
                 <!-- Consult Link -->
-                <button>Button 1</button>
-                <button>Button 2</button>
+                 <div class="center-button">
+                    <button class="blue-button">konsultasi Gizi Via Aplikasi</button>
+                    <button class="blue-button">Registrasi Online Ahli Gizi</button>
+                 </div>
 
                 <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
             
@@ -99,10 +109,10 @@
         <section class="main-section">
             <div class="penyakit">
                 <h3>Beberapa penyakit yang berasal dari kegemukan</h3>
-                <p>Diabetes</p>
-                <p>Hipertensi</p>
-                <p>Sakit Jantung</p>
-                <p>Osteoarhritis</p>
+                <p class="penyakit-p">Diabetes</p>
+                <p class="penyakit-p">Hipertensi</p>
+                <p class="penyakit-p">Sakit Jantung</p>
+                <p class="penyakit-p">Osteoarhritis</p>
             </div>
         </section>
 
@@ -118,6 +128,9 @@
     <footer>
         <p>Made by Alek@2024</p>
     </footer>
+
+    <!-- js -->
+     <script src="./js/index.js"></script>
 
 </body>
 </html>

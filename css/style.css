@@ -85,6 +85,63 @@ input[type=number], select {
     cursor: pointer;
 }
 
+
+.center-button{
+    display: flex;
+    justify-content: center;
+    margin: 32px;
+    gap: 16px;
+}
+
+.blue-button{
+    background-color: transparent;
+    border: 2px solid blue;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 .playStore, .appleStore{
     width: 150px;
 }
+
+.penyakit-p{
+    margin: 6px;
+}
+
+@media (max-width: 768px) {
+    .main-header {
+      font-size: 24px;
+    }
+  
+    .main-section {
+      width: 90%;
+      margin: 10px;
+    }
+  
+    form {
+      padding: 12px;
+      border-width: 2px;
+    }
+  
+    .hasil, .penyakit {
+      padding: 12px;
+      border-width: 2px;
+    }
+  
+    input[type=number], select {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  
+    .right-button {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+    }
+  
+    .playStore, .appleStore {
+      width: 120px;
+    }
+  }
+  
