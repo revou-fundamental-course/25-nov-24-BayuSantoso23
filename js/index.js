@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
       // Reset hasil dan informasi
       resultCalculation.textContent = "0";
-      infoResult.textContent = "Anda memiliki berat badan #";
+      infoResult.textContent = "";
     
       document.getElementById("hasil-bmi").textContent = "";
       document.getElementById("kategori-bmi").textContent = "";

@@ -1,3 +1,4 @@
+/* Mengatur Main */
 .main-header{
     text-align: center;
     padding-top: 16px;
@@ -10,16 +11,18 @@ main{
     align-items: center;
 }
 
-footer{
-    text-align: center;
-}
-
 .main-section{
     width: 80%;
     margin-left: 20px;
     margin-right: 20px;
 }
 
+/* Mengatur Footer */
+footer{
+    text-align: center;
+}
+
+/* Mengatur Atribut Main */
 form{
     background-color: aliceblue;
     padding: 16px;
@@ -60,6 +63,11 @@ input[type=number], select {
     box-sizing: border-box;
 }
 
+.penyakit-p{
+    margin: 6px;
+}
+
+/* Mengatur BUtton */
 .right-button{
     display: flex;
     justify-content: end;
@@ -85,14 +93,6 @@ input[type=number], select {
     cursor: pointer;
 }
 
-
-.center-button{
-    display: flex;
-    justify-content: center;
-    margin: 32px;
-    gap: 16px;
-}
-
 .blue-button{
     background-color: transparent;
     border: 2px solid blue;
@@ -101,14 +101,21 @@ input[type=number], select {
     cursor: pointer;
 }
 
+.center-button{
+    display: flex;
+    justify-content: center;
+    margin: 32px;
+    gap: 16px;
+}
+
+
+/* Mengatur Gambar */
 .playStore, .appleStore{
     width: 150px;
 }
 
-.penyakit-p{
-    margin: 6px;
-}
 
+/* Interaktivitas Media */
 @media (max-width: 768px) {
     .main-header {
       font-size: 24px;
